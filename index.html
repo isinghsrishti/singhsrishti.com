@@ -30,11 +30,11 @@
 				<h2>Srishti Singh</h2>
 				<h3> <i>Jack of all trades, master of some</i> </h3>
 				
-				<p> Hi, I am a software engineer from India interested in deep learning and computer vision and its application in robotics. <br><br>
+				<p> Hi, I am a Deep Learning Research engineer interested in Computer Vision, Deep Learning, and its application in UAVs/Aerial Robotics. <br><br>
 
 					I am currently working as a research engineer at IIIT Hyderabad under the guidance of <a href="https://faculty.iiit.ac.in/~jawahar/"> Prof CV Jawahar </a> , <a href="https://www.linkedin.com/in/gopinath-chappidi-1464667/"> Gopinath Chappidi </a>, <a href="https://www.linkedin.com/in/anbumanisubramanian/"> Dr. Anbumani Subramanian </a> <br><br>
 					
-                    Previously, I worked with an early age startup as one of the core developers, building products/MVP driven by data science and Machine Learning. <br><br>
+                    Previously I have worked on and gained diverse experience in fields like Software Development, Data Science and Natural Language Processing while working with an early age startup as one of the core developers, building products/MVP driven by data science and Machine Learning. <br><br>
 					
                     When I am not doing tech, you can find me with my DJI. <br>
                     Check out some of my drone shots <a href="https://www.instagram.com/srishti.tech/reels/" target="_blank"> here </a> <br> <br>
@@ -60,7 +60,7 @@
 
 					And I am always interested to work with motivated teams building research oriented projects, preferably in AI. <br> <br> -->
 					
-					<b>Research interest: Computer Vision, AI for Drones and Robotics. </b> <br> <br>
+					<b>Research interest: Computer Vision, Deep Learning, UAV Vision, AI for Drones and Robotics. </b> <br> <br>
 					
 		
 
@@ -87,55 +87,35 @@
             <h2>Work Experience</h2>
 
 			
-		
-	<!-------Job #1------>	
-        <div class="col-narrow">
-            <p><b>Research Engineer</b></p>
-            <p>IIIT Hyderabad</p>
-            <p>October 2021- Present</p> 
-        </div>
-        
-        <div class="col-wide">
-                <p>
-                    <b>Project: Pothole Detection</b> <br>
-                    We are developing technical solutions to enable automated identification and mapping of road safety issues like potholes, waterlogging,
-                    poor road surfaces, and other conditions of interest. Detection done using YOLOv5, tracking, sorting using DeepSort. <br> <br>
-                    
-                    <b>Responsibilities:</b> <br>
-                    <p> • Scale up Proof-of-concept (POC) applications using state-of-art implementations in Machine Learning and Deep Learning. </p>
-                    <p> • Fine-tune the pretrained YOLOv5 model on pothole data collected over 500 kms and improve its performance on unseen data. </p> 
-                    <p> • Performed extensive pre and post analysis over the input data and predictions from the YOLOv5 based detection model. </p>
-                    <p> • Generated intuitive visualizations summarizing our findings, such as a web app which include maps that points to the exact 
-                        location of the potholes detected along with the image (of the pothole detected) as a popup using Folium maps. </p>
-                    <p> • Productionized the pipeline, integrating all the components in a Django web application to facilitate future research. </p>
-                            
-                    <p><b>Technologies:</b> <br>
-                        Python, Folium, OpenCV, YOLOv5, DeepSort, Django, PostgreSQL, etc. <br> </p> <br>
-                        
-                </p>
-            </div>
+	
 
-
-
-	 <div class="col-narrow">
-            <p><b></b></p>
-            <p></p>
-            <p></p>	
-	</div>
+<!-------Job #2------>
+<div class="col-narrow">
+    <p><b>Research Engineer</b></p>
+    <p>IIIT Hyderabad</p>
+    <p>October 2021- Present</p> 
+</div>
 				
 			<div class="col-wide">
 				<p>
-                    <b>Project: Traffic Violations</b> <br>
-                     Detecting, Tracking and Counting Motorcycle Rider Traffic Violations on Unconstrained Roads. 
+                    <b>Project: Traffic Violations (Localization and Tracking)   </b> <br>
+                    Worked on designing a state of the art object detector model and tracking pipeline that can localise 
+                    and track the classes(motorcycles and riders) in frames from a live feed of captures at realtime with negligible latency, 
+                    detect weather the rider is wearing a helmet or not, count no. of riders on the bike(to detect triplet riding scenario) and track traffic violations based on these detections. <br><br>
+                     <!-- Detecting, Tracking and Counting Motorcycle Rider Traffic Violations on Unconstrained Roads. 
 		     Motorcycle Violations include Helmet/No Helmet detection model and triple riders detection on motorcycle, tracking and counting implemented with YOLOv4, 
-			Curriculum-learning based model training, Trapezium-shaped bounding box approach, DeepSort, and TensorFlow.<br><br>
+			Curriculum-learning based model training, Trapezium-shaped bounding box approach, DeepSort, and TensorFlow.<br><br> -->
                     
-                    <b>Responsibilities:</b> <br>
-					<p> • Fine-tune the pretrained YOLOv4 model and perform extensive pre and post analysis over the input data and predictions from the detection model.</p>
-					<p> • Make the model more robust to be used in any environment setting (independant of specific data source/camera angle)</p> 
-					<p> • Post Analysis of inferenced data, and further model tuning and integrating it with a Django Web application.</p>
-				<!-- <p> • Evaluate and implement existing, create new or modifications to ML/DL Method. Engineer & Deploy ML/DL models in systems/ web servers/ etc. </p> -->
+                    <p><b>Responsibilities:</b><br>
+                    • Annotated images from the famous Indian Driving Dataset(IDD) to label riders and motorcycle, riders with or without helmet, and motorcycle with triple riders. </p>
+                    <p> • The dataset was prepared in a in-the-wild manner to include max possible variations and unconstrained setting to make the model robust and generalizable.</p>
+                    <p> • Fine tuned a state of the art YOLOv4 model on this data that learnt descently to identify and localise the classes at realtime. </p>
+                    <p> • Adopted a curriculum learning based framework and a strategy to combine bounding boxes to generate trapezoidal bounding boxes around bikes with riders violating traffic rules.</p>
+                    <p> • These predictions serve as input to a DeepSort tracking algorithm that tracks various detected entities.</p>
+                    <p> • Provided extensive analysis and visualizations over the results that facilitate intuitive and interpretable inference pipeline.</p>
 
+
+					
 					<p><b>Technologies:</b> <br>
                     	Python, OpenCV, Tensorflow, YOLOv4, DeepSort, CUDA, cuDNN, etc. <br> </p><br>
 					  
@@ -143,10 +123,44 @@
 			</div>	
 	    
         
-		<br>
 		
-				
-	<!-------Job #2------>
+
+
+	
+	<!-------Job #1------>
+    <div class="col-narrow">
+        <p><b></b></p>
+        <p></p>
+        <p></p>	
+    </div>	
+   
+    
+    <div class="col-wide">
+            <p>
+                <b>Project: Identifying and Localizing speed limiters</b> <br>
+                We are developing technical solutions to enable automated identification and mapping of road safety issues like potholes, waterlogging,
+                poor road surfaces, and other conditions of interest. Detection done using YOLOv5, tracking, sorting using DeepSort. <br> <br>
+                
+                <p> <b>Responsibilities:</b> <br>
+                • Scale up Proof-of-concept (POC) applications using state-of-art implementations in Machine Learning and Deep Learning. </p>
+                <p> • Fine-tune the pretrained YOLOv5 model on pothole data collected over 500 kms and improve its performance on unseen data. </p> 
+                <p> • Performed extensive pre and post analysis over the input data and predictions from the YOLOv5 based detection model. </p>
+                <p> • Generated intuitive visualizations summarizing our findings, such as a web app which include maps that points to the exact 
+                    location of the potholes detected along with the image (of the pothole detected) as a popup using Folium maps. </p>
+                <p> • Productionized the pipeline, integrating all the components in a Django web application to facilitate future research. </p>
+                        
+                <p><b>Technologies:</b> <br>
+                    Python, Folium, OpenCV, YOLOv5, DeepSort, Django, PostgreSQL, etc. <br> </p> <br>
+                    
+            </p>
+        </div>
+
+
+
+
+
+
+	<!-------Job #3------>
             <div class="col-narrow">
 				<p><b>Software Engineer</b></p>
 				<p>Peepstake Private Limited</p>
@@ -160,8 +174,8 @@
                     It focuses on providing data-driven metrics to online content creators and analysing user-growth patterns on these platforms. <br>
                     <b>Similar Apps:</b> &nbsp; <a href="https://vidooly.com/youtube/top-videos/IN/All">Vidooly</a>, &nbsp; <a href="https://socialblade.com/">SocialBlade</a>, &nbsp; <a href="https://www.tubebuddy.com/">TubeBuddy</a>, &nbsp; <a href="https://vidiq.com/">VidIQ</a>. <br><br>
                     
-                    <b>Responsibilities:</b> <br>
-					<p> • Responsible for building end-to-end data science pipelines that involve gathering data (web scraping, calling APIs, writing scripts), data cleaning and preprocessing, exploratory analysis, advance analytics/model-building and deployment <a href="https://github.com/Srishti5ingh/youtube-data-api-project">[Sample Code]</a></p> 
+                    <p> <b>Responsibilities:</b> <br>
+					• Responsible for building end-to-end data science pipelines that involve gathering data (web scraping, calling APIs, writing scripts), data cleaning and preprocessing, exploratory analysis, advance analytics/model-building and deployment <a href="https://github.com/Srishti5ingh/youtube-data-api-project">[Sample Code]</a></p> 
 					<p> • Scraped social media data (Youtube trending videos, Youtube comments, channel metadata, video meta data, video captions, etc.) for various genres of content for real-time data analysis using third-party APIs (Youtube API, Twitter API), and web scraping tools like BeautifulSoup, Selenium, etc. </p>
 					<p> • Applied text pre-processing techniques on text data; researched and performed sentiment analysis, intent analysis, entity extraction, etc. on users' feedback to provide data-driven metrics using meaningful visualizations. </p>
 
@@ -203,6 +217,37 @@
 			<div class="content-wrap">
 			<h2>More Work Experience</h2>
 
+
+
+            <div class="col-narrow">
+				<p><b>3D Vision Summer School </b></p>
+				<p>IIIT Hyderabad</p>
+				<p>May 2022 - May 2022</p>
+			</div>
+				
+			<div class="col-wide">
+                <p>
+
+                <p><b>Curriculum:</b> <br>
+                     • Attended summer school on 3D Computer Vision, this event offered hands-on weeklong deep dive into fundamentals of 3D computer vision and deep learning techniques.</p>
+                    <p> • Topics included: 3D Sensing, Representation and Visualization, Introduction to Geometry Processing, Introduction to 3D Deep Volumetric & Point Cloud Learning, Introduction to Deep Learning on Meshes, etc.</p>
+                    <p> • The sessions included lectures on topics ranging from image capture in 2D, basic image processing techniques, 3D data acquisition and storage techniques, 3D data representations, techniques to go from one representation to another(voxelization, marching cubes etc).</p>
+                    <p> • Learnt traditional 3D data processing techniques to modern processing techniques like deep networks(PointNet), graph based networks, Implicit functions and Radiance field networks</p>
+                    <p> • Learnt applications of 3D in various domains like in robotics, learnt about slam, worked on some demo using slam in lab sessions, learnt to work with blender to generate 3D shapes and scenes, processing and visualization on meshlab, built and trained networks like PointNet on subset of ShapeNet data, tried hands on Pytorch Geometric to build Graph networks.</p>
+
+				<!-- <p> • Attended summer school on 3D Computer Vision, this event offered hands-on weeklong deep dive into fundamentals of 3D computer vision and deep learning techniques.</p>
+                <p> • Topics included: 3D Sensing, Representation and Visualization, Introduction to Geometry Processing, Introduction to 3D Deep Volumetric & Point Cloud Learning, Introduction to Deep Learning on Meshes, etc.  </p> -->
+			    
+                <p><b>Technologies:</b> <br>
+                    OpenCV, Blender, MeshLab, Open3D, SLAM, etc. <br><br> </p>
+
+            
+            </p>
+            </div>
+
+
+
+
             <!-------Job #2------>
             <div class="col-narrow">
 				<p><b>Software Engineer - Backend</b></p>
@@ -216,8 +261,8 @@
                     TIO is a no-swipe social networking and dating app matching people with the help of mathematical algorithms and machine learning.<br>
                     <b>Similar Apps:</b> &nbsp; <a href="#">OkCupid</a> &nbsp; <a href="https://bumble.com/">Bumble</a> <br> <br> -->
 
-                    <b>Responsibilities:</b> <br>
-					<p> • Backend developer responsible for designing, developing, testing, deploying and maintaining MVPs, prototype Proof-of-Concepts (PoC) for the company from scratch using agile methodology <a href= "https://github.com/Srishti5ingh/messaging-app">[Sample code]</a> </p>
+                    <p> <b>Responsibilities:</b> <br>
+					• Backend developer responsible for designing, developing, testing, deploying and maintaining MVPs, prototype Proof-of-Concepts (PoC) for the company from scratch using agile methodology <a href= "https://github.com/Srishti5ingh/messaging-app">[Sample code]</a> </p>
 					<p> • Developed backend scripts integrating third-party APIs and SDKs into the web app for near real-time data analysis written in Flask API. </p>
 					<p> • Developed RESTful backend APIs implementing a suite of features for a networking  mobile application written in Node-Express backend. </p>
 					<p> • Single-handedly designed the whole backend server architecture, deployed & maintained the application in production on Apache, CentOS Server. </p>
@@ -291,7 +336,7 @@
 	<div class="col-full">
 		<p> <b> [ PROGRAMMING ]: </b> Python, C, C++, C#, Java </p>
 		
-		<p> <b> [ FRAMEWORKS ]: </b> Pytorch, Tensorflow</p>
+		<p> <b> [ FRAMEWORKS ]: </b> Pytorch, Tensorflow, Keras</p>
 		
 		<p> <b> [ LIBRARIES ] : </b> Sklearn, OpenCV, MediaPipe </p>
 		
@@ -314,41 +359,42 @@
 
 	<div class="col-full">
 		
-        	<h4>Face Recognition App [2022]</h4>
-		<p>Implemented the paper "Siamese Neural Networks for One-shot Image Recognition" from scratch. <a href="https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf" >Paper Link</a></p>
+        <h4>Saimese Implementation For Face- Recognition [2022]</h4>
+		<p>Implemented the paper "Siamese Neural Networks for One-shot Image Recognition" for face verification. <a href="https://github.com/isrishtisingh/saimese-implementation-for-face-recognition" >[Github Link]</a></p>
 		
 		<h4>Visually Intelligent Drone [2022]</h4> 
-        	<p>Mapping and Face tracking on Tello Drone using DJITelloPy API and OpenCV. <a href="https://github.com/Srishti5ingh/tello-drone-programming">[Github Link]</a> </p>
+        <p>Mapping and Face tracking on Tello Drone using DJITelloPy API and OpenCV. <a href="https://github.com/isrishtisingh/tello-drone-programming">[Github Link]</a> </p>
 
-        	<h4>Human Pose Estimation [2022]</h4>
-        	<p>Estimating human poses using MediaPipe and MoveNet-Lightning. <a href="https://github.com/Srishti5ingh/human-pose-estimation">[GitHub Link]</a></p>
+        <h4>Human Pose Estimation [2022]</h4>
+        <p>Estimating human poses using MediaPipe, MoveNet-Lightning and state of the art HRNet. <a href="https://github.com/isrishtisingh/human-pose-estimation">[GitHub Link]</a></p>
 
 		<h4>Grocery Product Detection [2021]</h4>
-		<p>Product detection from shelves of grocery stores using this <a href="https://github.com/gulvarol/grocerydataset">dataset</a>, Data preparation using LabelImg, Model trained on SSD MobileDet using TensorFlow object Detection API, Inference using OpenCV. <a href="https://github.com/Srishti5ingh/grocery-product-detection">[Github Link]</a> </p>
+		<p>Product detection from shelves of grocery stores using this <a href="https://github.com/gulvarol/grocerydataset">dataset</a>, Data preparation using LabelImg, Model trained on SSD MobileDet using TensorFlow object Detection API, Inference using OpenCV. <a href="https://github.com/isrishtisingh/grocery-product-detection">[Github Link]</a> </p>
 
-		<h4>Custom Object Detection Using YOLO [2021]</h4>
+		<!-- <h4>Custom Object Detection Using YOLO [2021]</h4>
 		<p>The project and source code from <a href="https://pysource.com/2020/04/02/train-yolo-to-detect-a-custom-object-online-with-free-gpu/" target="_blank">this</a> article with custom dataset consisting of Pandas. Data preparation using LabelImg, Model trained on Darknet YOLOv3, Inference using OpenCV.</p>
-	
+
 		<h4>Custom Object Detection Using TFOD API [2021]</h4>
 		<p>Custom dataset consisting of cars and bikes. Data preparation using LabelImg, Model trained on SSD ResNet101 using TensorFlow object detection API, Inference using OpenCV.</p>
-	
+        -->
+
 		<h4>Optical Character Recognition using EasyOCR [2021]</h4>
 		<p>Optical Character Recognition(OCR) using EasyOCR. <a href="https://colab.research.google.com/drive/1hqIMbcKgazn473O3p2m9W0HmcnegNRFZ?usp=sharing">[Google Colab Link]</a></p>
 		
 		<h4>OpenCV Projects (crash course) [2021]</h4>
-		<p>Face detection, Number plate detection, Virtual painting, Document scanner, and other image processing and computer vision projects done using OpenCV. <a href="https://github.com/Srishti5ingh/opencv-crash-course" target="_blank">[Github Link]</a></p>
+		<p>Face detection, Number plate detection, Virtual painting, Document scanner, and other image processing and computer vision projects done using OpenCV. <a href="https://github.com/isrishtisingh/opencv-crash-course" target="_blank">[Github Link]</a></p>
 		
 		<h4>PyTorch Implementations (crash course) [2021]</h4>
-		<p>Neural netwroks, CNN, transfer learning and many other concepts implemented in Pytorch, along with projects like deployed deep learning model on Heroku.<a href="https://github.com/Srishti5ingh/pytorch-crash-course-0" target="_blank">[Github Link]</a></p>
+		<p>Neural netwroks, CNN, transfer learning and many other concepts implemented in Pytorch, along with projects like deployed deep learning model on Heroku.<a href="https://github.com/isrishtisingh/pytorch-crash-course-0" target="_blank">[Github Link]</a></p>
 		
-		<h4>Sentiment Analysis using 5 classical alternatives [2021]</h4>
+		<h4>Sentiment Analysis of Social Media Data [2020]</h4>
 		<p>Sentiment analysis of Youtube comments using various techniques & comparing their results. <a href="https://colab.research.google.com/drive/1mh48UyjqI6UNR-3vyCkkuA0JfXF6AJTZ?usp=sharing">[Google Colab Link] </a></p>
 
-        	<h4>Automated Youtube Views Counter [2020]</h4>
-		<p> <a href="https://www.youtube.com/results?search_query=tom+scott">Tom Scott</a> made <a href="https://www.youtube.com/watch?v=BxV14h0kFs0"> this</a> video where he uses YouTube Data API to automatically update the video's title with total view count in real-time. As a huge fan of Tom, I built the project, and deployed it on AWS(EC2). </p>
+        <h4>Automated Youtube Views Counter [2020]</h4>
+		<p> <a href="https://www.youtube.com/results?search_query=tom+scott">Tom Scott</a> made <a href="https://www.youtube.com/watch?v=BxV14h0kFs0"> this</a> video where he uses YouTube Data API to automatically update the video's title with total view count in real-time. As a huge fan of Tom, I built the project, and deployed it on AWS(EC2). <a href="https://github.com/isrishtisingh/youtube-automated-view-counter" target="_blank">[Github Link]</a> </p>
 
 		<h4>Messaging-chat Web Application [2020]</h4>
-		<p>A chat application with one-to-one/private and group/room chat feature built with NodeJS and SocketIO <a href="https://github.com/Srishti5ingh/messaging-app" target="_blank">[Github Link]</a></p>
+		<p>A chat application with one-to-one/private and group/room chat feature built with NodeJS and SocketIO <a href="https://github.com/isrishtisingh/messaging-app" target="_blank">[Github Link]</a></p>
 		
 		<!--
 		<h4>Computer Graphics Project using OpenGL [2018]</h4>
@@ -359,7 +405,7 @@
 		<p>Basically a Knockoff version of <a href="https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcojaGoogle's" >this</a> Google's dictionary browser extension with additional features and my final year thesis written on this decade old technology, very similar to <a href="https://dspace.mit.edu/bitstream/handle/1721.1/85404/870307642-MIT.pdf?sequence=2" target="_blank">this</a> MIT paper.</p> 
 	
 		<h4>Facebook Messenger Chatbot [2017]</h4>
-		<p>A simple <a href="https://www.facebook.com/loveyoda10" target="_blank">chatbot</a> written in PHP, JS, HTML. I wish it had been something like <a href="https://dzone.com/articles/how-i-used-deep-learning-to-train-a-chatbot-to-tal" target="_blank">this,</a> a chatbot trained using a deep learning model that would talk like me.</p>
+		<p>A simple <a href="https://www.facebook.com/loveyoda10" target="_blank">chatbot</a> written in PHP, JS, HTML. I wish it had been something like <a href="https://dzone.com/articles/how-i-used-deep-learning-to-train-a-chatbot-to-tal" target="_blank">this,</a> a chatbot trained using a deep learning model that could talk like me.</p>
 
 		<h4>Full-stack E-commerce Webapp [2017]</h4>
 		<p>A complete e-commerce web application with frontend, backend, database, deployed on a free hosting service, designed and developed entirely by me, now deprecated. <a href = "https://webixnary.000webhostapp.com/">[Link]</a> </p>
@@ -434,8 +480,8 @@
 	<div class="contact-info"> <b>
 		<a href="https://docs.google.com/document/d/10VBce9Z1VSfyJCatem6AONQk4WwLumbKIWX9NJ2ZYOE/edit?usp=sharing" >Backend</a>&nbsp; 
 		<a href="https://colab.research.google.com/drive/1mh48UyjqI6UNR-3vyCkkuA0JfXF6AJTZ?usp=sharing">NLP Project</a>&nbsp; 
-		<a href="https://github.com/Srishti5ingh/opencv-crash-course" target="_blank">OpenCV Projects</a>&nbsp;
-		<a href="https://github.com/Srishti5ingh/pytorch-crash-course-0" target="_blank">PyTorch Projects</a>&nbsp;  
+		<a href="https://github.com/isrishtisingh/opencv-crash-course" target="_blank">OpenCV Projects</a>&nbsp;
+		<a href="https://github.com/isrishtisingh/pytorch-crash-course-0" target="_blank">PyTorch Projects</a>&nbsp;  
 		<a href="https://drive.google.com/file/d/1SHhyu9SiUwlWX-0fWrrgY9VelZfMMS7h/view?usp=sharing" target="_blank">Hadoop Certificate</a>&nbsp; 
 		<a href="https://drive.google.com/file/d/1P17PKgd0bt1cD7UBRF3wKuMkOWm0JJeQ/view?usp=sharing" target="_blank">Resume</a> 
 		
@@ -461,12 +507,13 @@
         <div class="contact-info">
             <a href="mailto:isinghsrishti@gmail.com">Email</a>
             <a href="http://singhsrishti.com" target="_blank">Website</a>
-            <a href="https://github.com/Srishti5ingh" target="_blank">Github</a>
-            <a href="https://linkedin.com/Srishti5ingh" target="_blank">LinkedIn</a>
+            <a href="https://github.com/isrishtisingh" target="_blank">Github</a>
+            <a href="https://stackoverflow.com/users/11745574/singh" target="_blank">StackOverflow</a>
+            <a href="https://linkedin.com/isrishtisingh" target="_blank">LinkedIn</a>
 	        <a href="https://www.instagram.com/srishti.tech/" target="_blank">Instagram</a>
         </div>
 
-        <p> Last Edited in March 2022 by Srishti Singh</p> <br>
+        <p> Last Edited in May 2022 by Srishti Singh</p> <br>
 
 		</div>
     </footer>
